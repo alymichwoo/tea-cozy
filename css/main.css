@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+section:not(:last-child) {
+    margin-top: 70px;
+}
+
 .nav-logo {
     height: 50px;
 }
@@ -37,10 +41,9 @@ body {
 }
 
 .hero {
-    background: url(../img/mission-background.jpeg) no-repeat black;
-    background-size: cover;
+    background: url(../img/mission-background.jpeg) no-repeat center black;
     height: 700px;
-    width: 1200px;;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -52,5 +55,62 @@ body {
     position: absolute;
     background-color: black;
     width: 1200px;;
+}
 
+.featured-section {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-item img {
+    width: 300px;
+    height: 200px;
+    margin-right: 25px;
+}
+
+.featured-item p {
+    margin-top: 10px;
+}
+
+.location-section {
+    background: url(../img/locations-background.jpeg) no-repeat center black;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    padding: 50px;
+}
+
+.location-section h2 {
+    margin-bottom: 15px;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    opacity: 1;
+    margin-right: 40px;
+}
+
+.locations-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location p {
+    line-height: 3;
+}
+
+#contact {
+    height: 200px;
+}
+
+footer {
+    text-align: left;
+    margin-left: 20px;
 }
